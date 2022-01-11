@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <div>
+            <h1>HERES YOUR DAMN IP:</h1>
+            <h1 id=output></h1>
+        </div>
+
+        <script type="application/javascript">
+            function getIP(json) {
+             var output = ("My public IP address is: ", json.ip);
+             console.log(output)
+             document.getElementById('output').innerHTML = output;
+            }
+            
+        </script>
+  
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+  </body>
+
+</html>
